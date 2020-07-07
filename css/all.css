@@ -20,10 +20,19 @@
   content: "\f0b1"; }
 
 .fa-circle:before {
-  content: "\f111"; }
+  content: "\f111";
+  font-size: .5rem;
+  width: 10px;
+  display: inline-block;
+}
 
 .fa-dot-circle:before {
-  content: "\f192"; }
+  content: "\f192"; 
+  font-weight: 100;
+  font-size: .8rem;
+  display: inline-block;
+  width: 10px;
+}
 
 .fa-gamepad:before {
   content: "\f11b"; }

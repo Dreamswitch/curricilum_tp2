@@ -1,3 +1,10 @@
+/*------------Variables------------*/
+:root{
+    --aside-color:#f44336 ;
+    --decoration-color: #ef5350 ;
+}
+
+
 /* -----------Normalize---------- */
 
 *{
@@ -11,7 +18,7 @@
 /* -----------Fonts---------- */
 
 #tp2{
-    font-family: 'Times New Roman', Times, serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 1rem;
 }
 
@@ -30,7 +37,6 @@
     display: flex;
     width: inherit;
     height: 200px;
-    border: 1px solid black;
 
 }
 
@@ -39,7 +45,7 @@
 #tp2 header aside{
     width: 30%;
     height: 100%;
-    background-color: lightcoral;
+    background-color: var(--aside-color);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -51,7 +57,7 @@
     height: 120px;
     width: 120px;
     border-radius: 100%;
-    border: 2px solid blue;
+    border: 2px solid var(--decoration-color);
 }
 
 /* --Right Container-- */
@@ -73,12 +79,12 @@
 }
 
 #tp2 header section h1 span{
-    color: lightcoral;
+    color: var(--decoration-color);
 }
 
 #tp2 header section p span{
     text-transform: capitalize;
-    border-bottom: 1px solid lightcoral ;
+    border-bottom: 1px solid var(--decoration-color) ;
 }
 
 /* -----------Main---------- */
@@ -95,7 +101,7 @@
 #tp2 main aside{
     width: 30%;
     height: 100%;
-    background-color: lightcoral;
+    background-color: var(--aside-color);
 }
 
 /* --Left content-- */
@@ -121,8 +127,8 @@
 #tp2 main aside section h2{
     height: 30px;
     line-height: 30px;
-    background-color: lightcyan;
-    color: lightcoral;
+    background-color: #263238;
+    color: var(--aside-color);
     text-transform: uppercase;
     text-align: center;
     font-size: 1em;
@@ -141,7 +147,7 @@
 
 #tp2 main #main{
     width: 70%;
-    background-color: lightgreen;
+    padding-left: 30px;
 }
 
 #tp2 main aside .container:nth-child(0n+3){
@@ -158,24 +164,32 @@ padding: 0 .8rem;
 }
 /* --Right Content-- */
 
-#cursus{
- padding-left: 30px;
- width: 100%;
+
+
+#main h2{
+    border-bottom: 1px solid var(--decoration-color);
+    margin-bottom: 1.5em;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 1.3rem;
 }
 
-#cursus h2{
-    border-bottom: 1px solid lightcoral;
+#main h3{
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size:1rem;
 }
 
-#cursus .items {
+#main .items {
     display: flex;
-    justify-content: center;
+    align-items:baseline;
+    margin-bottom: 1.5em;
 }
 
-#cursus .items .date{
-    width: 15vw;
+#main .items .date{
+    min-width: 22%;
 }
-#cursus .items div p:nth-child(0n+3){
-    width: max-content;
-    background-color: pink;
+#main .itemsContent{
+    padding-left: .5em;
 }
+
