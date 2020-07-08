@@ -113,6 +113,7 @@
 }
 #tp2 main aside #contact li{
     margin-bottom: 1em;
+    cursor: pointer;
 }
 #tp2 main aside #contact li a{
     color: black;
@@ -204,9 +205,90 @@ padding: 0 .8rem;
 }
 .recommendationContainerFlex{
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 1em;
+}
+.recommendation{
+    width: 40%;
 }
 
 .itemsContent p:nth-child(0n+3){
     font-size: .9em;
+}
+
+
+@media all and (max-width: 768px){
+
+#tp2 header {
+    flex-direction: column;
+    height: unset;
+}
+#tp2 header aside {
+    width: 100%;
+    height: 150px;
+    margin-bottom: 2em;
+}
+#tp2 header section {
+    width: 100%;
+    padding-left: unset;
+    align-items: center;
+    margin-bottom: 3em;
+}
+
+
+#tp2 main{
+    flex-direction: column-reverse;
+}
+#tp2 main #main{
+    width: unset;
+    padding-left: unset;
+    padding-right: unset;
+    width: 80%;
+    margin: 0em auto 2em auto;
+
+}
+
+#tp2 main aside{
+    width:unset;
+    height: unset;
+    display: flex;
+    flex-direction: column;
+}
+#tp2 main aside .asideContainerBlock:nth-child(0n+2){
+    height:unset;
+}
+#tp2 main aside #about{
+    text-align: justify;
+    font-size: .9em;
+    padding: 2rem 1rem;
+}
+#tp2 main aside .asideContainerBlock:nth-child(0n+1){
+    order: 3;
+}
+#tp2 main aside #contact{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+#tp2 main aside #contact li:nth-child(0n+1){
+    display: none;
+}
+#tp2 main aside #contact li{
+    width: 36%;
+    height: 4em;
+    text-align: center;
+}
+#tp2 main aside #contact li a{
+    text-decoration: underline;
+    color: #ffcdd2;
+}
+
+#main h2{
+    text-align: center;
+}
+#main h2 i{
+    display: none;
+}
 }
