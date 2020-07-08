@@ -134,13 +134,13 @@
     font-size: 1em;
 }
 
-#tp2 main aside .container:nth-child(0n+2){
+#tp2 main aside .asideContainerBlock:nth-child(0n+2){
     height: 550px;
 }
 
 #tp2 main aside #about{
     text-align: justify;
-    font-size: .8em;
+    font-size: .9em;
     padding: 1rem 1.9rem;
 }
 /* --Right Container-- */
@@ -148,13 +148,14 @@
 #tp2 main #main{
     width: 70%;
     padding-left: 30px;
+    padding-right: 20px;
 }
 
-#tp2 main aside .container:nth-child(0n+3){
+#tp2 main aside .asideContainerBlock:nth-child(0n+3){
     height: 100px;
 }
 
-#tp2 main aside .container:nth-child(0n+3) #entertainContainer{
+#tp2 main aside .asideContainerBlock:nth-child(0n+3) #entertainContainer{
 display: flex;
 justify-content:space-evenly;
 align-items: center;
@@ -164,7 +165,11 @@ padding: 0 .8rem;
 }
 /* --Right Content-- */
 
-
+#main{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
 
 #main h2{
     border-bottom: 1px solid var(--decoration-color);
@@ -193,4 +198,15 @@ padding: 0 .8rem;
     padding-left: .5em;
 }
 
-essai de variable
+#main .itemsContent .cursus, #main .itemsContent .job{
+    text-transform: capitalize;
+    margin: 5px 0;
+}
+.recommendationContainerFlex{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.itemsContent p:nth-child(0n+3){
+    font-size: .9em;
+}
