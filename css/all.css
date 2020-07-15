@@ -34,6 +34,16 @@
   width: 10px;
 }
 
+@media all and (max-width:600px){
+  .fa-circle:before {
+    font-size: .3rem;
+  }
+  .fa-dot-circle:before {
+    font-size: .6rem;
+  }
+
+}
+
 .fa-gamepad:before {
   content: "\f11b"; }
 
@@ -85,7 +95,7 @@
   font-weight: 900; 
 }
 
-#tp2 main #main .fas,#tp2 main #main .fa{
+#tp2 main #rightSide .fas,#tp2 main #rightSide .fa{
   margin-right: .8rem;
   color: lightcoral;
 }

@@ -31,7 +31,7 @@
 }
 
 /* -----------Header---------- */
-/* --global Container-- */
+
 
 #tp2 header{
     display: flex;
@@ -139,14 +139,14 @@
     height: 550px;
 }
 
-#tp2 main aside #about{
+#tp2 main aside .about{
     text-align: justify;
     font-size: .9em;
     padding: 1rem 1.9rem;
 }
 /* --Right Container-- */
 
-#tp2 main #main{
+#tp2 main #rightSide{
     width: 70%;
     padding-left: 30px;
     padding-right: 20px;
@@ -166,13 +166,13 @@ padding: 0 .8rem;
 }
 /* --Right Content-- */
 
-#main{
+#rightSide{
     display: flex;
     flex-direction: column;
     justify-content: space-around;
 }
 
-#main h2{
+#rightSide h2{
     border-bottom: 1px solid var(--decoration-color);
     margin-bottom: 1.5em;
     text-transform: uppercase;
@@ -180,32 +180,34 @@ padding: 0 .8rem;
     font-size: 1.3rem;
 }
 
-#main h3{
+#rightSide h3{
     text-transform: uppercase;
     font-weight: 500;
     font-size:1rem;
 }
 
-#main .items {
+#rightSide .items {
     display: flex;
     align-items:baseline;
     margin-bottom: 1.5em;
 }
 
-#main .items .date{
-    min-width: 22%;
+#rightSide .items .itemsDate{
+    min-width: 30%;
+    display: flex;
+    align-items: baseline;
 }
-#main .itemsContent{
+#rightSide .itemsContent{
     padding-left: .5em;
 }
 
-#main .itemsContent .cursus, #main .itemsContent .job{
+#rightSide .itemsContent .cursus, #rightSide .itemsContent .job{
     text-transform: capitalize;
     margin: 5px 0;
 }
 .recommendationContainerFlex{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     flex-wrap: wrap;
     margin-bottom: 1em;
 }
@@ -240,7 +242,7 @@ padding: 0 .8rem;
 #tp2 main{
     flex-direction: column-reverse;
 }
-#tp2 main #main{
+#tp2 main #rightSide{
     width: unset;
     padding-left: unset;
     padding-right: unset;
@@ -258,7 +260,7 @@ padding: 0 .8rem;
 #tp2 main aside .asideContainerBlock:nth-child(0n+2){
     height:unset;
 }
-#tp2 main aside #about{
+#tp2 main aside .about{
     text-align: justify;
     font-size: .9em;
     padding: 2rem 1rem;
@@ -285,10 +287,45 @@ padding: 0 .8rem;
     color: #ffcdd2;
 }
 
-#main h2{
+#rightSide h2{
     text-align: center;
 }
-#main h2 i{
+#rightSide h2 i{
     display: none;
+}
+
+#rightSide .recommendation{
+    margin: 0 1rem;
+}
+}
+
+@media all and (max-width:600px){
+
+    
+#rightSide .recommendation{
+    width: 80%;
+    margin: 1em auto;
+    text-align: center;
+}
+
+
+#tp2 main aside #contact li{
+    width: 70%;
+    height: 4em;
+    text-align: center;
+}
+#tp2 main aside #contact li p{
+    margin-top: .3em;
+}
+
+
+#rightSide .items{
+    flex-direction: column;
+}
+#rightSide .itemsContent{
+    padding-left: unset;
+}
+#rightSide .itemsDate{
+    font-size: .7em;
 }
 }
