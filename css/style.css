@@ -2,6 +2,7 @@
 :root{
     --aside-color:#f44336 ;
     --decoration-color: #ef5350 ;
+    --link-color:#F48FB1;
 }
 
 
@@ -283,7 +284,7 @@ padding: 0 .8rem;
 }
 #tp2 main aside #contact li a{
     text-decoration: underline;
-    color: #ffcdd2;
+    color: var(--link-color);
 }
 
 #rightSide h2{

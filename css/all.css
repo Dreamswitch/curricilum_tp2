@@ -97,5 +97,5 @@
 
 #tp2 main #rightSide .fas,#tp2 main #rightSide .fa{
   margin-right: .8rem;
-  color: lightcoral;
+  color: var(--decoration-color);
 }
